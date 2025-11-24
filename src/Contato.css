@@ -1,0 +1,127 @@
+.contatoPage {
+  width: 100%;;
+}
+
+.tituloPagina {
+  margin-top: 200px;
+  font-family: "Atma", serif;
+  color: var(--marrom-escuro);
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(255, 200, 190, 0.6);
+}
+
+/* CAIXA GERAL */
+.boxGeral {
+  width: 85%;
+  margin: auto;
+  background-color: #f1cbcb;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  display: flex;
+  gap: 60px;
+}
+
+/* FORMULARIO */
+.formBox {
+  width: 50%;
+}
+
+
+.formContato label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #522d1b;
+  flex-direction: column-reverse;
+}
+
+.input-padrao,
+.select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.radioRow {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.receberEmailBox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btnContato {
+  margin-top: 20px;
+  width: 100%;
+  background: #2a4d69;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btnContato:hover {
+  background: #1d3a51;
+}
+
+/* MAPA */
+.mapBox {
+  width: 50%;
+}
+
+.mapBox iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+}
+
+/* ICONES INFERIORES */
+.iconRow {
+  width: 80%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.iconBox {
+  width: 22%;
+}
+
+.icon {
+  font-size: 40px;
+  color: #522d1b;
+  background: #f3c5c5;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.iconBox p {
+  font-size: 14px;
+  color: #333;
+}
+
+.iconBox p strong {
+  display: block;
+  margin-top: 5px;
+  color: #2a4d69;
+}

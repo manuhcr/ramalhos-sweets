@@ -1,0 +1,83 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 20px;
+  position: relative;
+  animation: modal-pop 0.25s ease-out;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+@keyframes modal-pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #b16b32;
+}
+
+.close-btn:hover {
+  color: #e06767;
+}
+
+.modal-title {
+  text-align: center;
+  color: #b16b32;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #b16b32;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.ingredients-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+.modal-img {
+  width: 50%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  
+}

@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Atma", serif;
+  background: linear-gradient(90deg, #ffdddd 14%, #ffffff 48%, rgba(255, 225, 208, 1) 100%, rgb(189, 138, 111) 90%) !important;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ==== CONTAINER PRINCIPAL ==== */
+.slider-container {
+  position: relative;
+  width: 100vw;
+  /* ocupa toda a largura da tela (viewport width) */
+  margin: 120px 0 0 0;
+  /* só margem em cima pro menu */
+  overflow: hidden;
+  /* esconde o que sai da tela */
+  z-index: 99;
+  /* abaixo do menu */
+  min-height: 250px;
+  /* evita sumir em telas menores */
+  left: 50%;
+  /* garante alinhamento mesmo com 100vw */
+  transform: translateX(-50%);
+  /* remove scroll horizontal causado por 100vw */
+}
+
+/* ==== FAIXA DE SLIDES ==== */
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* ==== CADA SLIDE ==== */
+.slide {
+  flex: 0 0 100%;
+  /* cada slide ocupa 100% da largura visível */
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  /* cobre toda a área sem distorcer */
+}
+
+/* ==== RESPONSIVO ==== */
+@media (max-width: 768px) {
+  .slider-container {
+    margin-top: 80px;
+    /* um pouco menos de espaço pro menu */
+    min-height: 180px;
+  }
+}
+
+/* Endereço */
+.localtitle {
+  font-family: "Atma", serif;
+  color: #221107;
+  text-align: center;
+  position: relative;
+  top: 140px;
+}
+
+.local {
+  font-family: "Atma", serif;
+  color: #221107;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.localizacao {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  top: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.endereco {
+  font-size: 20px;
+  color: #221107 !important;
+  font-family: "Atma", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.location {
+  position: relative;
+  top: 600px;
+}
+
+.mapa {
+  border: #bd8a6f 2px solid !important;
+  border-radius: 20px;
+}
+
+/*Sobre nós*/
+.sobretitle {
+  margin-top: 200px;
+  font-family: "Atma", serif;
+  color: var(--marrom-escuro);
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(255, 200, 190, 0.6);
+}
+
+.img-doceria {
+  width: 60%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 30%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.sobreNos {
+  width: 100%;
+}
+
+.sobre {
+  margin-top: 60px;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #5a2100;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.divsobre {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: -50px;
+}
+
+/* RESPONSIVO 👇 */
+@media (max-width: 768px) {
+  .divsobre {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .img-doceria {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .sobre {
+    text-align: center;
+    margin-top: 0;
   }
 }

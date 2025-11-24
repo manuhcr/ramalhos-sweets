@@ -1,0 +1,153 @@
+/* footer */
+.footer {
+    background-color: #f8f0e4;
+    color: #926840;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
+    font-family: "Atma", cursive;
+    overflow: hidden;
+    margin-top: auto;
+    /* MAGIC */
+}
+
+/* FIXA O FOOTER NO FINAL SEM VOAR */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto !important;
+}
+
+
+.footer-wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    z-index: 0;
+    /* atrás de tudo */
+    pointer-events: none;
+    /* impede que a onda atrapalhe clique */
+}
+
+.footer-wave {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer-wave path {
+    filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.3));
+}
+
+.conteudo {
+    display: flex;
+    top: -50px;
+    left: 10px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.logofooter {
+    width: 160px;
+    z-index: 1;
+    position: relative;
+}
+
+
+.contatofooter {
+    font-family: "Atma", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #5f412e;
+    font-size: 22px;
+    margin: 80px 0;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.contatofooter:hover {
+    color: #503824;
+    text-shadow: 1px 1px 3px rgb(73, 40, 17);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #eccaca;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    text-shadow: 1px 1px 3px #cf6f6f;
+    transform: scale(1.1);
+}
+
+
+
+.icone {
+    position: relative;
+    top: 6px;
+}
+
+/* fim footer */
+
+/* -------------------------- */
+/*        RESPONSIVIDADE      */
+/* -------------------------- */
+
+@media (max-width: 728px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        top: -20px;
+        left: 0;
+    }
+
+    .logofooter {
+        width: 130px;
+    }
+
+    .footer-wave-container {
+        height: 80px;
+        margin: 0;
+        position: relative;
+    }
+
+    .contatofooter {
+        font-size: 20px;
+        margin: 40px 0;
+    }
+
+    .social-icons {
+        margin-top: -40px;
+    }
+}

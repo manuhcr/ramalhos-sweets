@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffdede;
+    font-family: "Atma", serif;
+    background: linear-gradient(90deg, #ffe3e3 14%, #ffffff 48%, #ffe8d8 100%) !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Destaque da informação inválida*/
+.info-invalida {
+    background-color: #d84a4a !important;
+    color: #ffffff !important;
+}
+
+.texto-erro {
+    color: #d84a4a !important;
+}
+
+/* 🌸 Título das Encomendas */
+.encomendas-titulo {
+    color: #c76b78;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 40px;
+    font-weight: bold;
+    text-shadow: 0 3px 5px rgba(255, 205, 210, 0.9);
+    /* Linha decorativa tipo cardápio vintage */
+    border-bottom: 3px dotted rgba(199, 107, 120, 0.35);
+    width: fit-content;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+/* Container central */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10em;
+}
+
+/* Deixei igual, só removi qualquer top */
+.adiciona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 4em;
+    position: relative;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tabela {
+    width: 90%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+    border: none;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    background-color: #ffeef0;
+    box-shadow: 0 4px 20px rgba(189, 130, 111, 0.25);
+}
+
+.tabela td,
+th {
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #e7c5b0;
+    color: #97603e;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tabela th {
+    font-weight: bold;
+    background-color: #ffd3d8;
+    color: #97603e;
+}
+
+/* 🌷 Formulário estilo card fofinho */
+section legend {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #e97d8b;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+/* Card do formulário */
+.formDelivery {
+    background: #fff0f0;
+    padding: 30px 35px;
+    border-radius: 18px;
+    box-shadow:
+        0 5px 25px rgba(255, 180, 180, 0.3),
+        0 3px 10px rgba(150, 90, 70, 0.1);
+
+    width: 70%;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 8em;
+    border: 2px dashed #f0b4b4;
+}
+
+/* Labels */
+.formDelivery label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+    color: #7a3d22;
+    font-size: 1rem;
+}
+
+/* Inputs e Select */
+.formDelivery input,
+.formDelivery select {
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 10px;
+    border: 1px solid #e0b2a5;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fffdfd;
+}
+
+/* Foco fofo */
+.formDelivery input:focus,
+.formDelivery select:focus {
+    outline: none;
+    border-color: #d4878f;
+    box-shadow: 0 0 8px rgba(212, 135, 143, 0.5);
+}
+
+/* Select (opções) */
+.formDelivery select optgroup {
+    font-weight: bold;
+    color: #522d1b;
+}
+
+.input {
+    margin-right: 50px;
+}
+
+/* Botão */
+.formDelivery button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #d4878f;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.formDelivery button:hover {
+    background: #a96066;
+}
+
+/* Fade out */
+.fadeOut {
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Filtro */
+#filtrar-tabela {
+    width: 20%;
+    padding: 10px;
+    background-color: #fff3f3;
+    color: #3b1616;
+    border: 1px solid #e6a0ab;
+    border-radius: 12px;
+    margin: 8px auto;
+    box-shadow: 0 2px 7px rgba(200, 150, 150, 0.3);
+}
+
+.label {
+    color: #c76b78;
+}
+
+/* Controle de visibilidade */
+.invisivel {
+    display: none;
+}
+
+.visivel {
+    display: block;
+}
+
+/* ---------------------- */
+/*      RESPONSIVIDADE    */
+/* ---------------------- */
+@media (max-width: 768px) {
+
+    /* remove qualquer deslocamento vertical */
+    .container,
+    .formDelivery,
+    .adiciona,
+    .delivery {
+        top: unset !important;
+        margin-top: 0 !important;
+    }
+
+    /* organiza o layout normalmente */
+    body {
+        display: block !important;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 1.5em !important;
+    }
+
+
+    .formDelivery {
+        width: 80% !important;
+        padding: 22px;
+        border-radius: 14px;
+
+        grid-template-columns: 1fr;
+        /* vira 1 coluna */
+        gap: 14px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5em !important;
+        margin-bottom: 3em !important;
+    }
+
+    .formDelivery label {
+        font-size: 0.95rem;
+    }
+
+    .formDelivery input {
+        padding: 10px;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .input {
+        display: block !important;
+        margin-right: 0 !important;
+        width: 95% !important;
+    }
+
+    .input label {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #doce select {
+        width: 96% !important;
+    }
+
+    .formDelivery button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+.botao {
+    top: 2em;
+    position: relative;
+    background-color: #f3e2e4;
+    color: #c76b78;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px dashed #f0b4b4;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* loader, animações, responsividade — tudo igual */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 245, 235, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.donut-icon {
+    width: 85px;
+    height: 85px;
+    color: #c9705d;
+    animation: spin 1.2s linear infinite;
+    filter: drop-shadow(0 0 8px rgba(255, 200, 190, 0.6));
+}
+
+.loader-text {
+    font-family: "Atma", serif;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #5f2b1f;
+    text-shadow: 0 2px 4px rgba(255, 230, 220, 0.8);
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.adiciona,
+.delivery {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* ======== TABELA MOBILE ARRUMADA ======== */
+@media (max-width: 768px) {
+
+    .tabela {
+        width: 100%;
+        border-radius: 14px;
+        border-collapse: collapse;
+    }
+
+    .tabela th,
+    .tabela td {
+        font-size: 14px !important;
+        padding: 10px !important;
+        word-break: break-word;
+    }
+
+    .tabela {
+        table-layout: auto !important;
+    }
+}

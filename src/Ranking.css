@@ -1,0 +1,119 @@
+.bestcandytitle {
+  font-family: "Atma", serif;
+  color: #221107;
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.bestcandysubtitle {
+  font-family: "Atma", serif;
+  color: #221107;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+
+.imgbestone {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.titlebestone {
+  font-family: "Atma", serif;
+  font-weight: 300;
+  color: #221107;
+  font-size: 24px;
+}
+
+.textbestone {
+  font-family: "Atma", serif;
+  font-weight: 300;
+  color: #221107;
+  font-size: 20px !important;
+}
+
+.bestone21 {
+  text-align: center;
+  font-family: "Atma", serif;
+  font-weight: 400;
+  color: #221107;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 45%;
+  background: #f5e3e3;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  max-width: 570px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.imgbestone {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.textbestone {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.ranking-section {
+  margin-top: 10em;
+  margin-bottom: 2em;
+}
+
+.nome {
+  color: #704932;
+  text-align: center;
+  font-family: "Atma", serif;
+}
+
+.tituloDesc {
+  color: #682f10;
+  text-align: center;
+  font-family: "Atma", serif;
+}
+
+.tituloWin {
+  color: #5a2100;
+  text-align: center;
+  font-family: "Atma", serif;
+}
+
+.win {
+  color: #5a2100;
+  font-family: "Atma", serif;
+  white-space: pre-line;
+}
+
+.desc {
+  color: #221107;
+  white-space: pre-line;
+  font-size: 24px;
+  font-family: "Atma", serif;
+}
+
+.img {
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+}
