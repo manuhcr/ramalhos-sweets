@@ -11,6 +11,8 @@ import '../Contato.css';
 import '../Footer.css';
 import '../video.css';
 import '../App.css';
+import "../Slider.css";
+import "../Sobre.css";
 
 export default function Home() {
   return (

@@ -1,0 +1,49 @@
+/* ==== CONTAINER PRINCIPAL ==== */
+.slider-container {
+  position: relative;
+  width: 100vw;
+  /* ocupa toda a largura da tela (viewport width) */
+  margin: 120px 0 0 0;
+  /* só margem em cima pro menu */
+  overflow: hidden;
+  /* esconde o que sai da tela */
+  z-index: 99;
+  /* abaixo do menu */
+  min-height: 250px;
+  /* evita sumir em telas menores */
+  left: 50%;
+  /* garante alinhamento mesmo com 100vw */
+  transform: translateX(-50%);
+  /* remove scroll horizontal causado por 100vw */
+}
+
+/* ==== FAIXA DE SLIDES ==== */
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* ==== CADA SLIDE ==== */
+.slide {
+  flex: 0 0 100%;
+  /* cada slide ocupa 100% da largura visível */
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  /* cobre toda a área sem distorcer */
+}
+
+/* ==== RESPONSIVO ==== */
+@media (max-width: 768px) {
+  .slider-container {
+    margin-top: 56px;
+    /* um pouco menos de espaço pro menu */
+    min-height: 180px;
+  }
+}
