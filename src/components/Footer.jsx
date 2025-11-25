@@ -1,6 +1,7 @@
 
 import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import logo from '../assets/logo ramalho´s sweets.png'
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -31,12 +32,11 @@ function Footer() {
       </div>
 
       <div className="conteudo">
-        <a href="./encomendas.html">
-          <p className="contatofooter">Quer encomendar?</p>
-        </a>
-        <p className="contatofooter">Rua dos Doces, 123 - Cidade Açucarada</p>
+       
         <p className="contatofooter">Quer mandar um feedback?</p>
-        <p className="contatofooter">contato@ramalhossweets.com</p>
+         <Link to="/Feedback" className="contatofooter">Mande sua avaliação!</Link>
+         <Link to="/encomendas" className="contatofooter">Quer encomendar?</Link>
+        <p className="contatofooter">Rua dos Doces, 123 - Cidade Açucarada</p>
       </div>
 
       <div className="social-icons">

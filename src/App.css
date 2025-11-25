@@ -65,7 +65,7 @@ body {
 /* ==== RESPONSIVO ==== */
 @media (max-width: 768px) {
   .slider-container {
-    margin-top: 80px;
+    margin-top: 56px;
     /* um pouco menos de espaço pro menu */
     min-height: 180px;
   }
@@ -170,5 +170,9 @@ body {
   .sobre {
     text-align: center;
     margin-top: 0;
+    font-size: 1.5em;
+  }
+  .sobretitle {
+    font-size: 2em;
   }
 }

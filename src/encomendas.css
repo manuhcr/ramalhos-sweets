@@ -80,7 +80,6 @@ body {
     margin-bottom: 2%;
     table-layout: fixed;
     border: none;
-    /* border-radius: 12px; */
     overflow: hidden;
     background-color: #ffeef0;
     box-shadow: 0 4px 20px rgba(189, 130, 111, 0.25);
@@ -266,6 +265,11 @@ section legend {
         font-size: 0.95rem;
         width: 100%;
     }
+    .formDelivery select {
+        padding: 10px;
+        font-size: 0.95rem;
+        width: 108%;
+    }
 
     .input {
         display: block !important;
@@ -368,19 +372,28 @@ section legend {
 @media (max-width: 768px) {
 
     .tabela {
-        width: 100%;
-        border-radius: 14px;
+        width: 95%;
         border-collapse: collapse;
     }
 
     .tabela th,
     .tabela td {
-        font-size: 14px !important;
-        padding: 10px !important;
-        word-break: break-word;
+        font-size: 1.8vh !important;
+        padding: 2px !important;
+        word-break: keep-all;
     }
 
-    .tabela {
-        table-layout: auto !important;
+    .tabela tr,
+    th {
+        font-size: 1em;
+    }
+
+    .encomendas-titulo {
+        font-size: 2em;
+    
+    }
+    #filtrar-tabela {
+        width: 54%;
+        margin: 1em;
     }
 }

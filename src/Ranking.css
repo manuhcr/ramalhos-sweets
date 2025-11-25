@@ -117,3 +117,15 @@
   justify-items: center;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 250px;
+  }
+
+  .card-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}

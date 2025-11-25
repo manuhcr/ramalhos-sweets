@@ -1,5 +1,6 @@
 .contatoPage {
-  width: 100%;;
+  width: 100%;
+  ;
 }
 
 .tituloPagina {
@@ -68,8 +69,8 @@ textarea {
 .btnContato {
   margin-top: 20px;
   width: 100%;
-  background: #2a4d69;
-  color: #fff;
+  background: #ffeaea;
+  color: #7a5353;
   padding: 12px;
   font-size: 16px;
   border: none;
@@ -78,7 +79,7 @@ textarea {
 }
 
 .btnContato:hover {
-  background: #1d3a51;
+  background: #e08282;
 }
 
 /* MAPA */
@@ -124,4 +125,34 @@ textarea {
   display: block;
   margin-top: 5px;
   color: #2a4d69;
+}
+
+@media (max-width: 768px) {
+  .boxGeral {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .formBox,
+  .mapBox {
+    width: 100%;
+  }
+
+  .iconRow {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .iconBox {
+    width: 100%;
+  }
+
+  .input-padrao,
+  .select,
+  textarea {
+    font-size: 16px;
+    width: 94%;
+  }
 }

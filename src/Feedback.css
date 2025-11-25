@@ -152,7 +152,7 @@
  }
 
  .fr-modal {
-   width: 92%;
+   width: 80%;
    max-width: 480px;
    background: var(--card);
    padding: 18px;
@@ -176,7 +176,8 @@
  }
 
  .fr-field {
-   margin-bottom: 12px
+   margin-bottom: 12px;
+   width: 92%;
  }
 
  input,
@@ -186,6 +187,10 @@
    padding: 10px;
    border-radius: 10px;
    border: 1px solid #f2c7c9
+ }
+
+ select {
+   width: 108%;
  }
 
  textarea {
@@ -208,6 +213,7 @@
    color: var(--primary);
    margin-bottom: 10px
  }
+
  .open-btn {
    background: var(--primary);
    color: #fff;

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,21 +12,30 @@
 }
 
 .modal {
-  background: white;
+  background: #ffe6e6;
   padding: 2rem;
-  max-width: 600px;
-  width: 90%;
-  border-radius: 20px;
+  width: 76%;
+  border-radius: 18px;
   position: relative;
   animation: modal-pop 0.25s ease-out;
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: 70vh;
 }
 
 @keyframes modal-pop {
-  0% { transform: scale(0.7); opacity: 0; }
-  60% { transform: scale(1.05); opacity: 1; }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .close-btn {
@@ -62,11 +71,13 @@
   margin-bottom: 1rem;
   line-height: 1.5;
 }
+
 .ingredients-list {
   list-style-type: disc;
   padding-left: 20px;
   color: #555;
 }
+
 .modal-img {
   width: 50%;
   border-radius: 15px;
@@ -77,7 +88,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
+  border: 2px dashed #f0b4b4;
+  border-radius: 18px;
   padding: 2rem;
-  
+
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .modal-img {
+    width: 80%;
+  }
+
+ 
 }

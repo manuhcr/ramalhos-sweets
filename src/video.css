@@ -31,3 +31,15 @@ iframe {
 }
 
 /*fim video */
+@media (max-width: 768px) {
+    .videotitle {
+        font-size: 2em;
+    }
+    .div_video {
+        margin-bottom: 50px;
+    }
+    .div_iframe iframe {
+        width: 90%;
+        height: 200px;
+    }
+}

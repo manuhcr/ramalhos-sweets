@@ -1,0 +1,64 @@
+/*Sobre nós*/
+.sobretitle {
+    margin-top: 200px;
+    font-family: "Atma", serif;
+    color: var(--marrom-escuro);
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 2px 3px rgba(255, 200, 190, 0.6);
+}
+
+.img-doceria {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 30%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 20px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.sobreNos {
+    width: 100%;
+}
+
+.sobre {
+    margin-top: 60px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5a2100;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.divsobre {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: -50px;
+}
+
+/* RESPONSIVO 👇 */
+@media (max-width: 768px) {
+    .divsobre {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .img-doceria {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .sobre {
+        text-align: center;
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    .sobretitle {
+        font-size: 2em;
+    }
+}

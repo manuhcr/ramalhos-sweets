@@ -29,7 +29,7 @@
 
 /* ----- CARDÁPIO CONTAINER (mantido!) ----- */
 .cardapio {
-   width: 100%;
+    width: 100%;
 }
 
 /* ----- TÍTULO ----- */
@@ -64,7 +64,8 @@
 
 .d-flex {
     display: flex;
-    flex-direction: column; /* deixa mais parecido com o cardápio elegante */
+    flex-direction: column;
+    /* deixa mais parecido com o cardápio elegante */
     font-family: "Atma", serif;
     color: var(--marrom-escuro);
     padding: 28px;
@@ -73,7 +74,7 @@
 
     background-color: #fff5ef;
     border: 2px solid #d9b8a9;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
     width: 320px;
     transition: 0.25s ease;
 }
@@ -95,10 +96,12 @@
     gap: 12px;
     border-bottom: 1px dotted #d8b7a7;
 }
+
 .doce {
     width: 32px;
     height: 32px;
 }
+
 ul li span {
     color: var(--marrom-escuro);
     font-weight: bold;
@@ -132,7 +135,9 @@ ul li span {
     text-align: left;
     position: relative;
     width: 60%;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    max-height: 80%;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
 }
 
 .modalcardapio-content h2 {
@@ -160,4 +165,45 @@ ul li span {
     opacity: 1;
     pointer-events: all;
     display: flex;
+}
+
+@media (max-width: 768px) {
+    .modalcardapio-content {
+        width: 90%;
+
+    }
+
+    #modalcardapio-Conteudo {
+        margin-left: -36px;
+    }
+
+    #modalcardapio-Conteudo h1 {
+        text-align: center;
+        margin-left: 1em;
+    }
+
+    #modalcardapio-Conteudo ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    #modalcardapio-Conteudo ul li img {
+        width: 24px;
+        height: 24px;
+        margin: 1em;
+    }
+
+    #modalcardapio-Conteudo strong {
+        font-size: 15px;
+        margin: 4px;
+
+    }
+
+    .cardapiotitle {
+       
+        font-size: 1.5em;
+        margin-top: 2em;
+       
+    }
 }
