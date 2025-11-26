@@ -97,7 +97,7 @@
 @media (max-width: 768px) {
     .navbar {
         justify-content: left;
-        height: 8%;
+        height: 10%;
     }
 
     .menu-btn {
