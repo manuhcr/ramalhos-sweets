@@ -80,7 +80,7 @@ const buscarEncomendas = async () => {
   setLoading(true);
 
   try {
-    const response = await axios.get("http://localhost:5000/encomendas_web");
+    const response = await axios.get("https://ramalhos-sweets-production.up.railway.app/encomendas_web")
     const encomendasAPI = response.data;
 
     const nomesExistentes = lista.map((e) => e.nome);
