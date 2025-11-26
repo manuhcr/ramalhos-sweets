@@ -42,6 +42,19 @@
     cursor: pointer;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #e06767;
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+
+
 .navbar.scrolled {
     background-color: #b16b32;
 }
@@ -79,7 +92,6 @@
 }
 
 @media (max-width: 768px) {
-
     .navbar {
         height: auto;
         padding: 1.8em 1.4em;
@@ -87,7 +99,9 @@
         position: fixed;
         top: 0;
         width: 88%;
-        z-index: 1000000000;
+        z-index: 10000000;
+        justify-content: left;
+        transition: none;
     }
 
     .menu-btn {
